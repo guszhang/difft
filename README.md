@@ -1,6 +1,6 @@
 # DIFFT: Double-Interpolation FFT for Accurate Harmonic Extraction
 
-DIFFT is an open-source collection of implementations for the Double-Interpolation FFT method proposed in the paper *"An Improved Accuracy Harmonic Extraction Method for Microcontrollers" (Tian & Zhang, 2024)*. This method provides high-accuracy harmonic amplitude and phase extraction suitable for resource-constrained embedded systems.
+DIFFT is an open-source collection of implementations for the Double-Interpolation FFT method proposed in the paper *"An Improved Accuracy Harmonic Extraction Method for Microcontrollers" (Tian & Zhang, 2025)*. This method provides high-accuracy harmonic amplitude and phase extraction suitable for resource-constrained embedded systems.
 
 > 🚧 **Project Under Construction** 🚧  
 This repository is currently under active development.  
@@ -98,4 +98,4 @@ Contributions are welcome! Please see `CONTRIBUTING.md` for how to get involved.
 
 If you use this work in your research, please cite:
 
-> Tian, Y., & Zhang, C. (2024). *An Improved Accuracy Harmonic Extraction Method for Microcontrollers*. IEEE Transactions on Industrial Electronics.
+> Y. Tian and C. Zhang, "An Improved Accuracy Harmonic Extraction Method for Microcontrollers," in IEEE Transactions on Industrial Electronics, vol. 72, no. 5, pp. 5344-5352, May 2025, doi: 10.1109/TIE.2024.3472288. 
