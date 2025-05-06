@@ -11,6 +11,11 @@
 %
 %  This function is part of the DIFFT package.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Important Note %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  This implementation searches for the first peak in the FFT spectrum, which is not always the fundamental frequency or the expected frequency to be extracted. It is mostly useful for signals with a decent amount component at the fundamental frequency, such as the voltage and current signals in power systems or motor drives. For other signals, the user may need to modify the code to search for the expected frequency.
+
 %  Author: Gus Zhang
 %  Email: cheng.zhang@manchester.ac.uk
 %  Date: 02/05/2025
