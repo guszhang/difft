@@ -57,8 +57,19 @@ X = fft(x);
 % calculate the amplitudes
 fast_extract_amp = abs(X);
 
-% find the first peak starting from the second element
-[~, peakIndex] = max(fast_extract_amp(2:end));
+% find the first local peak (first go up then go down) starting from the second element
+peakIndex = -1;
+for i = 2:length(fast_extract_amp)-1
+    if fast_extract_amp(i) > fast_extract_amp(i-1) && fast_extract_amp(i) > fast_extract_amp(i+1)
+        peakIndex = i;
+        break;
+    end
+end
+
+% if no local peak is found, raise an error
+if peakIndex == -1
+    error('No local peak found in the spectrum.');
+end
 
 % calculate the base frequency
 f = (peakIndex + (log(fast_extract_amp(peakIndex+1)/fast_extract_amp(peakIndex-1))/log(fast_extract_amp(peakIndex).^2/fast_extract_amp(peakIndex-1)/fast_extract_amp(peakIndex+1))/2)-1) * binSize;
